@@ -4,7 +4,6 @@
 ** nicolas.verlhiac@gmail.com
 ** @nicolasverlhiac
 
-MàJ : 29/10/2013 - 16:15
 */
 
 
@@ -56,7 +55,7 @@ footer {
 
 
 /*
-**                                  Typographie et titres
+**                                Typographie et titres
 **************************************************************************************/
 
 
@@ -74,9 +73,13 @@ h2 {
     line-height: 32px;
 }
 
+p{ font-size: 14px; color: #828282; }
+
+ul { margin: 0; }
+
 li { font-size: 14px; color: #828282; }
 
-p{ font-size: 14px; color: #828282; }
+strong { font-weight: bold; }
 
 a { color: #14a6db; text-decoration: none; }
 
@@ -139,22 +142,15 @@ a.btn-retour i{
     margin-right: 5px;
 }
 
-ul {
-    margin: 0;
-}
-strong {
-    font-weight: bold;
-}
-
-/* Formulaire
-************************************************************/
+/*                                   Formulaire
+**************************************************************************************/
 
 form {
     width: 400px;
     float: left;
 }
 
-/* Boutons Submit */
+/* Submit */
 
 input[type=submit]{
     background: #80b61b;
@@ -180,11 +176,16 @@ input[type=submit]:active{
 
 /* Champs de saisie */
 
-input[type=text], input[type=password] {
+input[type=text], 
+input[type=password] {
     border-radius: 3px;
     border:1px solid #e5e5e5;
     padding: 18px;
     margin: 0 0 15px 0;
+    font-size: 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0, 0.10) inset;
+    color: #7f7f7f;
+    width: 370px;
     background: #d9d9d9; /* Old browsers */
     background: -moz-linear-gradient(-45deg,  #e0e0e0 0%, #d9d9d9 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e0e0e0), color-stop(100%,#d9d9d9)); /* Chrome,Safari4+ */
@@ -193,35 +194,29 @@ input[type=text], input[type=password] {
     background: -ms-linear-gradient(-45deg,  #e0e0e0 0%,#d9d9d9 100%); /* IE10+ */
     background: linear-gradient(135deg,  #e0e0e0 0%,#d9d9d9 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#d9d9d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    font-size: 15px;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0, 0.10) inset;
-    color: #7f7f7f;
-    width: 370px;
 }
 
-input[type=text]:focus, input[type=text]:focus{
+input[type=text]:focus, 
+input[type=password]:focus{
     background: #d9d9d9;
     -webkit-appearance: none; 
     outline: none;
 }
 
-input:-moz-placeholder, textarea:-moz-placeholder {
+input:-moz-placeholder, 
+textarea:-moz-placeholder {
     color: #7f7f7f;
     font-weight: lighter;
 }
  
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #7f7f7f;
-    font-weight: lighter;
-}
-
-input.placeholder, textarea.placeholder {
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder {
     color: #7f7f7f;
     font-weight: lighter;
 }
 
 /*
-**  RESPONSIVE
+**                                  RESPONSIVE
 **************************************************************************************/
 
 @media screen and (max-width: 1084px) {
