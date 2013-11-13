@@ -1,0 +1,235 @@
+/* Introduction
+===============
+
+** nicolas.verlhiac@gmail.com
+** @nicolasverlhiac
+
+MàJ : 29/10/2013 - 16:15
+*/
+
+
+/*
+**                                Sructure globale du site
+**************************************************************************************/
+header {
+    width: 400px;
+    margin: 100px auto 0;
+}
+
+header#head-accueil {
+    width: 400px;
+    margin: 100px 0 0 0;
+}
+
+body {
+	font-family: 'helvetica';
+    background: url('../images/noise.gif') repeat;
+    font-weight: 100;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 400px;
+    margin: 0 auto;
+}
+
+section {
+    width: 400px;
+    margin: 0 auto;
+}
+
+section#accueil {
+    width: 400px;
+    float: left;
+    margin: 0 0 0 0;
+}
+
+footer {
+    font-size: 18px;
+    padding: 0 0 20px 0;
+    float: left;
+    color: #606060;
+    text-align: center;
+    width: 856px;
+}
+
+
+/*
+**                                  Typographie et titres
+**************************************************************************************/
+
+
+h1 {
+    border-bottom: 1px solid #b4b4b4;
+    padding-bottom: 15px;
+    margin: 0 0px 30px 0;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+    color: #80b61b;
+    font-weight: 100;
+    text-align: center;
+    line-height: 32px;
+}
+
+li { font-size: 14px; color: #828282; }
+
+p{ font-size: 14px; color: #828282; }
+
+a { color: #14a6db; text-decoration: none; }
+
+a:hover { color: #63c5e7; }
+
+a.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: #666666;
+    background: url('../images/logo-bis3.png') no-repeat left top;
+    height: 80px;
+    width: 400px;
+    padding-top: 10px;
+    display: block;
+}
+
+/*Boutton*/
+
+a.btn {
+    background: #555555;
+    text-align: center;
+    border-radius: 3px;
+    padding: 18px; 
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 1px 0px rgba(0,0,0, 0.4);
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    width: 365px;
+    display: block;
+}
+
+a.btn:hover{
+    background: #80b61b;
+}
+
+a.btn-retour {
+    background: #0072AF;
+    text-align: center;
+    border-radius: 3px;
+    padding: 9px; 
+    color: #fff;
+    border: none;
+    margin: 0 0 15px 0;
+    font-size: 12px;
+    font-weight: 500;
+    width: 130px;
+    display: block;
+}
+
+a.btn-retour:hover {
+    background: #0198EB;
+}
+
+a.btn-retour i{
+    font-size: 16px;
+    position: relative;
+    bottom: -3px;
+    margin-right: 5px;
+}
+
+ul {
+    margin: 0;
+}
+strong {
+    font-weight: bold;
+}
+
+/* Formulaire
+************************************************************/
+
+form {
+    width: 400px;
+    float: left;
+}
+
+/* Boutons Submit */
+
+input[type=submit]{
+    background: #80b61b;
+    border-radius: 3px;
+    padding: 18px; 
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 1px 0px rgba(0,0,0, 0.4);
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    width: 406px;
+}
+input[type=submit]:hover{
+    background: #91b43b;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.3);
+}
+input[type=submit]:active{
+    box-shadow: 0 0 5px rgba(0,0,0, 0.3) inset;
+    -webkit-appearance: none; 
+    outline: none;
+}
+
+/* Champs de saisie */
+
+input[type=text], input[type=password] {
+    border-radius: 3px;
+    border:1px solid #e5e5e5;
+    padding: 18px;
+    margin: 0 0 15px 0;
+    background: #d9d9d9; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #e0e0e0 0%, #d9d9d9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e0e0e0), color-stop(100%,#d9d9d9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #e0e0e0 0%,#d9d9d9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #e0e0e0 0%,#d9d9d9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #e0e0e0 0%,#d9d9d9 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #e0e0e0 0%,#d9d9d9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#d9d9d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    font-size: 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0, 0.10) inset;
+    color: #7f7f7f;
+    width: 370px;
+}
+
+input[type=text]:focus, input[type=text]:focus{
+    background: #d9d9d9;
+    -webkit-appearance: none; 
+    outline: none;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #7f7f7f;
+    font-weight: lighter;
+}
+ 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #7f7f7f;
+    font-weight: lighter;
+}
+
+input.placeholder, textarea.placeholder {
+    color: #7f7f7f;
+    font-weight: lighter;
+}
+
+/*
+**  RESPONSIVE
+**************************************************************************************/
+
+@media screen and (max-width: 1084px) {
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+}
