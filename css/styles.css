@@ -6,6 +6,81 @@
 
 */
 
+/*
+**                                    Icones (font)
+**************************************************************************************/
+/** Outil utilisé pour générer cette font : http://icomoon.io/app/ **/
+
+@font-face {
+    font-family: 'panel-utilisateur';
+    src:url('../fonts/panel-utilisateur.eot');
+    src:url('../fonts/panel-utilisateur.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/panel-utilisateur.ttf') format('truetype'),
+        url('../fonts/panel-utilisateur.woff') format('woff'),
+        url('../fonts/panel-utilisateur.svg#panel-utilisateur') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'panel-utilisateur';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+    content: "\e60a";
+}
+.icon-checkmark:before {
+    content: "\e60b";
+}
+.icon-cross:before {
+    content: "\e60c";
+}
+.icon-lifebuoy:before {
+    content: "\e60d";
+}
+.icon-trash:before {
+    content: "\e60e";
+}
+.icon-cog2:before {
+    content: "\e60f";
+}
+.icon-logout:before {
+    content: "\e601";
+}
+
+/** CSS pour IE7 et plus vieux **/ 
+.icon-heart {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60a;');
+}
+.icon-checkmark {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60b;');
+}
+.icon-cross {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60c;');
+}
+.icon-lifebuoy {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60d;');
+}
+.icon-trash {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60e;');
+}
+.icon-cog2 {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60f;');
+}
+.icon-logout {
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe601;');
+}
+
 
 /*
 **                                Sructure globale du site
