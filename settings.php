@@ -39,6 +39,31 @@ $f = basename($_SERVER['PHP_SELF']);
 	    		<?php include_once ("sidebar.php") ?>
 		    </div>
 
+		    <div id="content">
+
+		    	<div class="header-content">
+					<h2>Paramètre du compte</h2>
+				</div>
+
+		    	<form action="sound.php" method="POST">
+		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
+		    		<p>Les informations personelles sont modifiable dans votre <a href="">profil</a>.</p>
+		            <input id="mail" placeholder="nicolas.verlhiac@gmail.com" type="text" name="mail">
+		            <input id="password" placeholder="************" type="password" name="password">
+		            
+		            <input type="submit" value="Sauvergarder">
+
+		            <hr>
+
+		        </form>
+
+	            <p>Cette action est irréverssible</p>
+	            <form class="delete" action="sound.php" method="POST">
+	            	<input type="submit" value="Supprimer le compte">
+		        </form>
+
+		    </div>
+
 		</div>
     
     </body>

@@ -39,6 +39,10 @@ $f = basename($_SERVER['PHP_SELF']);
 	    		<?php include_once ("sidebar.php") ?>
 		    </div>
 
+		    <div id="content">
+		    	coucou
+		    </div>
+
 		</div>
     
     </body>
