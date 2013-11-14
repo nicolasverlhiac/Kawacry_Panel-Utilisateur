@@ -440,6 +440,46 @@ textarea::-webkit-input-placeholder {
     font-weight: lighter;
 }
 
+/** Formulaire de suppression de compte **/
+
+div#content form.delete {
+    width: 590px;
+    float: left;
+}
+
+div#content form.delete p{
+    float: left;
+    width: 350px;
+    margin-right: 10px;
+    padding-right: 15px;
+    border-right: 1px solid red;
+}
+
+/* Submit */
+
+div#content form.delete input[type=submit]{
+    background: red;
+    float: left;
+    border-radius: 3px;
+    padding: 10px; 
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 1px 0px rgba(0,0,0, 0.4);
+    margin: 10px 0 15px 0;
+    font-size: 14px;
+    font-weight: 500;
+    width: 200px;
+}
+div#content form.delete input[type=submit]:hover{
+    background: #91b43b;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.3);
+}
+form#delete input[type=submit]:active{
+    box-shadow: 0 0 5px rgba(0,0,0, 0.3) inset;
+    -webkit-appearance: none; 
+    outline: none;
+}
+
 /*
 **                                  RESPONSIVE
 **************************************************************************************/

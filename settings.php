@@ -57,8 +57,8 @@ $f = basename($_SERVER['PHP_SELF']);
 
 		        </form>
 
-	            <p>Cette action est irréverssible</p>
 	            <form class="delete" action="sound.php" method="POST">
+	            	<p>Vous pouvez supprimer votre compte, mais sachez que cette action est irréverssible.</p>
 	            	<input type="submit" value="Supprimer le compte">
 		        </form>
 
