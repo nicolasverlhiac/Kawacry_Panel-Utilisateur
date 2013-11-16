@@ -379,6 +379,12 @@ div.header-content h2 {
     background: #D5FF82;
 }
 
+#content form input[type=text]:focus, 
+#content form input[type=password]:focus{
+    background: #d9d9d9;
+    -webkit-appearance: none; 
+    outline: none;
+}
 
 /*                                     Profil
 **************************************************************************************/
