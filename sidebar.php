@@ -1,5 +1,5 @@
 			<div class="header-sidebar">
-				<img src="images/portrait.png">
+				<img src="images/profil.png" width="80" height="80">
 				<h2>Nicolas Verlhiac</h2>
 			</div>
 

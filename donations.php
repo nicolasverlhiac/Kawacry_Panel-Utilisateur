@@ -40,7 +40,12 @@ $f = basename($_SERVER['PHP_SELF']);
 		    </div>
 
 		    <div id="content">
-		    	coucou
+
+		    	<div class="header-content">
+					<h2>Profil</h2>
+				</div>
+
+				<p>knskfnbks</p>
 		    </div>
 
 		    <div class="clear"></div>

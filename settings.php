@@ -48,16 +48,21 @@ $f = basename($_SERVER['PHP_SELF']);
 		    	<form action="sound.php" method="POST">
 		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
 		    		<p>Les informations personelles sont modifiable dans votre <a href="">profil</a>.</p>
-		            <input id="mail" placeholder="nicolas.verlhiac@gmail.com" type="text" name="mail">
-		            <input id="password" placeholder="************" type="password" name="password">
 
-		            <hr>
+		            <input id="mail" placeholder="nicolas.verlhiac@gmail.com" type="text" name="mail">
+		            <div class="clear"></div>
+		            <input id="password" placeholder="************" type="password" name="password">
 
 		            <div class="clear"></div>
 		            
 		            <input type="submit" value="Sauvergarder">
 
+		            <div class="clear"></div>
+		            <hr>
+		            <p>Vous ne vous servez plus de votre compte? Vous pouvez le <a href="">supprimer</a>.</p>
+
 		        </form>
+
 
 		    </div>
 

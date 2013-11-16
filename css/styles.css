@@ -106,7 +106,7 @@ body {
 .main {
     width: 1100px;
     display: block;
-    margin: 150px auto 0;
+    margin: 50px auto 0;
     box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
     background: #ffffff;
     border-radius: 3px;
@@ -255,7 +255,7 @@ div.header-sidebar img {
     background: #83A47C;
     border-radius: 45px;
     border: 3px solid #ffffff;
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 div.header-sidebar h2 {
@@ -336,9 +336,14 @@ div.header-content h2 {
     font-size: 20px;
     color: #999999;
     margin: 0; 
-    font-weight: 900;
+    font-weight: 100;
     text-align: left;
 }
+
+#content p {
+    margin-bottom: 20px;
+}
+
 #content form {
     width: 740px;
     margin: 0 auto;
@@ -374,12 +379,55 @@ div.header-content h2 {
     background: #d9d9d9; /* Old browsers */
 }
 
+
+/*                                     Profil
+**************************************************************************************/
+
+.profil{
+    float: left;
+}
+
+.profil img{
+    border: 8px solid #ffffff;
+    border-radius: 205px;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0, 0.10);
+    margin: 30px 0 20px 0;
+}
+
+.profil-infos{
+    margin: 40px 0 0 40px;
+    float: left;
+}
+
+.profil-infos h3{
+    font-size: 40px;
+    margin: 10px 0 25px;
+    font-weight: 100;
+    color: #828282;
+}
+
+.profil-infos p{
+    font-size: 16px;
+    font-weight: 100;
+    color: #828282;
+    padding-left: 20px;
+}
+
 /*                                   Formulaire
 **************************************************************************************/
 
 form {
     width: 400px;
     float: left;
+}
+
+label{
+    color: #909090;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    font-weight: 100;
+    font-size: 14px;
 }
 
 /* Submit */

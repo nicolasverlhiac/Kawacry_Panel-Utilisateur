@@ -41,21 +41,43 @@ $f = basename($_SERVER['PHP_SELF']);
 
 		    <div id="content">
 
-		    	<div class="header-content">
-					<h2>Paramètre du compte</h2>
+				<div class="profil">
+
+					<img src="images/profil.png" width="200" height="200">
+
 				</div>
 
-		    	<form action="sound.php" method="POST">
-		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
-		    		<p>Les informations personelles sont modifiable dans votre <a href="">profil</a>.</p>
-		            <input id="mail" placeholder="nicolas.verlhiac@gmail.com" type="text" name="mail">
-		            <input id="password" placeholder="************" type="password" name="password">
+				<div class="profil-infos">
+					<h3>Nicolas Verlhiac</h3>
+					<p>Inscrit le 20 septembre 2013</p>
+					<p><strong>administrateur</strong></p>
+					<p><a href="">nicolasverlhiac.fr</a> </p>
+				</div>
 
-		            <hr>
+				<div class="clear"></div>
+
+				<hr>
+
+				<div class="header-content">
+					<h2>Modifier votre profil</h2>
+				</div>
+
+				<form action="sound.php" method="POST">
+		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
+
+		            <input id="mail" placeholder="Nicolas" type="text" name="mail">
+		            <input id="mail" placeholder="Verlhiac" type="text" name="mail">
+		            <div class="clear"></div>
+		            <input id="mail" placeholder="nicolasverlhiac.fr" type="text" name="mail">	
 
 		            <div class="clear"></div>
 		            
 		            <input type="submit" value="Sauvergarder">
+
+		            <div class="clear"></div>
+		            <hr>
+		            <p>Vous ne vous servez plus de votre compte? Vous pouvez le <a href="">supprimer</a>.</p>
+
 
 		        </form>
 
