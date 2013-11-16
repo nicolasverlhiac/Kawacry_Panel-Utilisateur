@@ -43,6 +43,8 @@ $f = basename($_SERVER['PHP_SELF']);
 		    	coucou
 		    </div>
 
+		    <div class="clear"></div>
+
 		</div>
     
     </body>
