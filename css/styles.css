@@ -105,7 +105,11 @@ body {
 
 .main {
     width: 900px;
-    margin: 0 auto;
+    display: block;
+    margin: 150px auto 0;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    border-radius: 3px;
 }
 
 section {
@@ -127,6 +131,9 @@ footer {
     width: 856px;
 }
 
+.clear {
+    clear: both;
+}
 
 /*
 **                                Typographie et titres
@@ -229,11 +236,10 @@ a.btn-retour i{
 **************************************************************************************/
 
 #sidebar {
-    margin: 150px 0 0 0;
+    margin: 0 0 0 0;
     float: left;
     background: #fff;
     width: 250px;
-    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 /** Header de la sidebar **/
@@ -241,7 +247,7 @@ a.btn-retour i{
 div.header-sidebar {
     width: 250px;
     background: url("../images/dark.png");
-    border-radius: 3px 3px 0 0;
+    border-radius: 3px 0 0 0;
     padding-bottom: 5px; 
     text-align: center;
 }
@@ -308,12 +314,13 @@ ul.sidebar li a i.current{
 **************************************************************************************/
 
 #content {
-    margin: 150px 0 0 20px;
+    margin: 0 0 0 0;
+    border-left: solid 1px #f4f4f4;
     float: left;
     background: #ffffff;
     border-radius: 3px;
     width: 590px;
-    padding: 0 20px;
+    padding: 0 20px 0 39px;
     display: block;
 }
 
@@ -344,7 +351,7 @@ div.header-content h2 {
     padding: 10px; 
     color: #fff;
     border: none;
-    float: right;
+    float: left;
     box-shadow: 0 0 1px 0px rgba(0,0,0, 0.4);
     margin: 0 0 15px 0;
     font-size: 14px;
