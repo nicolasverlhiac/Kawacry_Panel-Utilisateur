@@ -12,14 +12,13 @@ define("SQL_PASS","root");
 /** Adresse de l'hébergement MySQL. */
 define("SQL_HOST","localhost");
 
-
 // ** Connexion à la base de données avec PDO ** //
 try {
     $mysql = new PDO("mysql:dbname=".SQL_DBASE.";host=".SQL_HOST,SQL_USER,SQL_PASS);
     $mysql->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-} catch (PDOException $e) {
+	} catch (PDOException $e) {
         echo'Erreur : '.$e->getMessage();
-}
+	}
 
 /* Grain de sable pour le cryptage des mots de passe
  *
@@ -32,7 +31,7 @@ define('AUTH_SALT','=BYMLF7-On.<;fn-@^tMGY;JW!j+.HjN|YUW{R+kRv|gwu 3k>(SLVl-E[<|
 
 // Hashage du mot de passe dans la base de données avec la clé SALT
 function hashPassword($pw){
-	return sha1(SALT.md5($pw.SALT).sha1(SALT));
+	return sha1(AUTH_SALT.md5($pw.AUTH_SALT).sha1(AUTH_SALT));
 }
 
 ?>
