@@ -13,9 +13,9 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `rank` tinyint(2) unsigned NOT NULL,
   `registered` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `last_login` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `token` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
-  `token_validity` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+-- `token` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+-- `token_validity` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `email` (`email`),
-  UNIQUE KEY `token` (`token`)
+  UNIQUE KEY `email` (`email`)
+-- UNIQUE KEY `token` (`token`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

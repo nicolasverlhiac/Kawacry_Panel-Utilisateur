@@ -11,7 +11,7 @@ if(strlen($_POST["mail"]) <=0 or strlen($_POST["password"]) <=0 ){
 
 // ** Récupération des variables du formulaire de connexion ** //
 $mail = ($_POST['mail']);
-$password = ($_POST['password']);
+$password = hashPassword($_POST['password']);
 
 // ** Vérification si l'utilisateur existe dans la base de données ** //
 
