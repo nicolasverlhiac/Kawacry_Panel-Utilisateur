@@ -48,10 +48,10 @@ $f = basename($_SERVER['PHP_SELF']);
 				</div>
 
 				<div class="profil-infos">
-					<h3>Nicolas Verlhiac</h3>
+					<h3><?php echo $_SESSION["prenom"]; ?> <?php echo $_SESSION["nom"]; ?></h3>
 					<p>Inscrit le 20 septembre 2013</p>
 					<p><strong>administrateur</strong></p>
-					<p><a href="">nicolasverlhiac.fr</a> </p>
+					<p><a href="<?php echo $_SESSION["url_site"]; ?>"><?php echo $_SESSION["url_site"]; ?></a> </p>
 				</div>
 
 				<div class="clear"></div>

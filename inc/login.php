@@ -26,11 +26,13 @@ $userdata = $check_query->fetch();
  * Si il n'y a rien, alors mauvais couple
  */
 if ($check_query->rowCount()==1) {
-	
-	$_SESSION["mail"] = $_POST["mail"]; 
-	$_SESSION["motdepasse"] = $_POST["password"]; 
+
+	$_SESSION["mail"] = $mail; 
+	$_SESSION["motdepasse"] = $password; 
 	$_SESSION["nom"] = $userdata['nom'];
 	$_SESSION["prenom"] = $userdata['prenom'];
+	$_SESSION["url_image"] = $userdata['url_image'];
+	$_SESSION["url_site"] = $userdata['url_site'];
 	
 	$check_query->closeCursor();
 	$check_query = NULL;

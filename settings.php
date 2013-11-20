@@ -49,7 +49,7 @@ $f = basename($_SERVER['PHP_SELF']);
 		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
 		    		<p>Les informations personelles sont modifiable dans votre <a href="">profil</a>.</p>
 
-		            <input id="mail" placeholder="nicolas.verlhiac@gmail.com" type="text" name="mail">
+		            <input id="mail" placeholder="<?php echo $_SESSION["mail"]; ?>" type="text" name="mail">
 		            <div class="clear"></div>
 		            <input id="password" placeholder="************" type="password" name="password">
 
@@ -59,7 +59,7 @@ $f = basename($_SERVER['PHP_SELF']);
 
 		            <div class="clear"></div>
 		            <hr>
-		            <p>Vous ne vous servez plus de votre compte? Vous pouvez le <a href="">supprimer</a>.</p>
+		            <p>Vous ne vous servez plus de votre compte? Vous pouvez le <a href="inc/delete.php?mail=<?php echo $_SESSION['mail']; ?>&mdp=<?php echo $_SESSION['motdepasse']; ?>">supprimer</a>.</p>
 
 		        </form>
 

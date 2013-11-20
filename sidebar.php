@@ -1,6 +1,6 @@
 			<div class="header-sidebar">
 				<img src="<?php echo $_SESSION["url_image"]; ?>" width="80" height="80">
-				<h2>Nicolas Verlhiac</h2>
+				<h2><?php echo $_SESSION["prenom"]; ?> <?php echo $_SESSION["nom"]; ?></h2>
 			</div>
 
 			<ul class="sidebar">
