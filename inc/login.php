@@ -37,10 +37,20 @@ if ($check_query->rowCount()==1) {
 	$check_query->closeCursor();
 	$check_query = NULL;
 
+	$query = "UPDATE utilisateurs SET last_login=:last_login WHERE email=:mail";
+	$prep = $mysql->prepare($query);
+
+	$prep->bindValue(':mail', $mail, PDO::PARAM_STR);
+	$prep->bindValue(':last_login', date("y-m-d-h-i-s"), PDO::PARAM_STR);
+	$prep->execute();
+
+	$prep->closeCursor();
+	$prep = NULL;
+
 	header ("Location: ../profil.php");
 	exit();
 
-	
+
 
 }else{
 	die("Mauvais couple d'identifiants");
