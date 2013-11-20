@@ -40,6 +40,8 @@ if ($check_query->rowCount()==1) {
 	header ("Location: ../profil.php");
 	exit();
 
+	
+
 }else{
 	die("Mauvais couple d'identifiants");
 }

@@ -62,13 +62,13 @@ $f = basename($_SERVER['PHP_SELF']);
 					<h2>Modifier votre profil</h2>
 				</div>
 
-				<form action="sound.php" method="POST">
+				<form action="update.php" method="POST">
 		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
 
-		            <input id="mail" placeholder="<?php echo $_SESSION["prenom"]; ?>" type="text" name="mail">
-		            <input id="mail" placeholder="<?php echo $_SESSION["nom"]; ?>" type="text" name="mail">
+		            <input id="prenom" placeholder="<?php echo $_SESSION["prenom"]; ?>" type="text" name="prenom">
+		            <input id="nom" placeholder="<?php echo $_SESSION["nom"]; ?>" type="text" name="nom">
 		            <div class="clear"></div>
-		            <input id="mail" placeholder="<?php echo $_SESSION["url_site"]; ?>" type="text" name="mail">	
+		            <input id="site" placeholder="<?php echo $_SESSION["url_site"]; ?>" type="text" name="site">	
 
 		            <div class="clear"></div>
 		            

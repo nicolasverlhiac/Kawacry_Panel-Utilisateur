@@ -45,7 +45,7 @@ $f = basename($_SERVER['PHP_SELF']);
 					<h2>Paramètre du compte</h2>
 				</div>
 
-		    	<form action="sound.php" method="POST">
+		    	<form action="inc/update.php" method="POST">
 		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
 		    		<p>Les informations personelles sont modifiable dans votre <a href="">profil</a>.</p>
 
