@@ -1,5 +1,5 @@
 <?php
-include ("config.php");
+include ("../config.php");
 
 $mail = ($_POST['mail']);
 $password = hashPassword($_POST['password']);
@@ -25,9 +25,13 @@ $_SESSION["nom"] = $nom;
 $_SESSION["prenom"] = $prenom;
 $_SESSION["url_image"] = $url_image;
 $_SESSION["url_site"] = $url_site;
+$_SESSION["token_uncrypted"] = uniqid();
+$_SESSION["token"] = hashpassword($_SESSION["token_uncrypted"]);
 
 $prep->closeCursor();
 $prep = NULL;
 	
 header ("location: ../profil.php");
+
+
 ?>

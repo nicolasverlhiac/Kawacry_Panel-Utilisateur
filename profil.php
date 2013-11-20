@@ -45,15 +45,14 @@ $f = basename($_SERVER['PHP_SELF']);
 
 				<div class="profil">
 
-					<img src="<?php echo $_SESSION["url_image"]; ?>" width="200" height="200">
+					<img src="<?php echo $_SESSION["url_image"]; ?>" width="150" height="150">
 
 				</div>
 
 				<div class="profil-infos">
 					<h3><?php echo $_SESSION["prenom"]; ?> <?php echo $_SESSION["nom"]; ?></h3>
-					<p>Inscrit le 20 septembre 2013</p>
 					<p><strong>administrateur</strong></p>
-					<p><a href="<?php echo $_SESSION["url_site"]; ?>"><?php echo $_SESSION["url_site"]; ?></a> </p>
+					<p><a target="_blank" href="http://<?php echo $_SESSION['url_site']; ?>">http://<?php echo $_SESSION['url_site']; ?></a> </p>
 				</div>
 
 				<div class="clear"></div>
@@ -64,13 +63,13 @@ $f = basename($_SERVER['PHP_SELF']);
 					<h2>Modifier votre profil</h2>
 				</div>
 
-				<form action="update.php" method="POST">
+				<form action="inc/update.php" method="POST">
 		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
 
 		            <input id="prenom" placeholder="<?php echo $_SESSION["prenom"]; ?>" type="text" name="prenom">
 		            <input id="nom" placeholder="<?php echo $_SESSION["nom"]; ?>" type="text" name="nom">
 		            <div class="clear"></div>
-		            <input id="site" placeholder="<?php echo $_SESSION["url_site"]; ?>" type="text" name="site">	
+		            <input id="site" placeholder="http://<?php echo $_SESSION['url_site']; ?>" type="text" name="url_site">	
 
 		            <div class="clear"></div>
 		            

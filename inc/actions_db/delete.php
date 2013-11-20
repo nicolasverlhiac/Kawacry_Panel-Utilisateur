@@ -1,6 +1,7 @@
 <?php 
 
-include ("config.php");
+include ("../config.php");
+
 $mail =  $_GET["mail"];
 $password = $_GET["mdp"];
 

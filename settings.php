@@ -48,7 +48,7 @@ $f = basename($_SERVER['PHP_SELF']);
 
 		    	<form action="inc/update.php" method="POST">
 		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
-		    		<p>Les informations personelles sont modifiable dans votre <a href="">profil</a>.</p>
+		    		<p>Les informations personelles sont modifiable dans votre <a href="profil.php">profil</a>.</p>
 
 		            <input id="mail" placeholder="<?php echo $_SESSION["mail"]; ?>" type="text" name="mail">
 		            <div class="clear"></div>
