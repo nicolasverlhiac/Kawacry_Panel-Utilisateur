@@ -33,6 +33,8 @@ if ($check_query->rowCount()==1) {
 	$_SESSION["prenom"] = $userdata['prenom'];
 	$_SESSION["url_image"] = $userdata['url_image'];
 	$_SESSION["url_site"] = $userdata['url_site'];
+	$_SESSION["token_uncrypted"] = uniqid();
+	$_SESSION["token"] = hashpassword($_SESSION["token_uncrypted"]);
 	
 	$check_query->closeCursor();
 	$check_query = NULL;
