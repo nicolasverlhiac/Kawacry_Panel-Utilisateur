@@ -76,7 +76,7 @@ $f = basename($_SERVER['PHP_SELF']);
 
 		            <div class="clear"></div>
 		            <hr>
-		            <p>Vous ne vous servez plus de votre compte? Vous pouvez le <a href="">supprimer</a>.</p>
+		            <p>Vous ne vous servez plus de votre compte? Vous pouvez le <a href="inc/delete.php?mail=<?php echo $_SESSION['mail']; ?>&mdp=<?php echo $_SESSION['motdepasse']; ?>">supprimer</a>.</p>
 
 
 		        </form>

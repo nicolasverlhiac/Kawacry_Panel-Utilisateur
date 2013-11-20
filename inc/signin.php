@@ -8,7 +8,7 @@ $prenom = ($_POST['prenom']);
 $url_image = "images/profil.png";
 $url_site = "";
 
-$query = "INSERT INTO utilisateurs (email, password, nom, prenom, url_image) VALUES (:mail, :password, :nom, :prenom, :url_image );";
+$query = "INSERT INTO utilisateurs (email, password, nom, prenom, url_image, url_site) VALUES (:mail, :password, :nom, :prenom, :url_image, :url_site );";
 $prep = $mysql->prepare($query);
 
 $prep->bindValue(':mail', $mail, PDO::PARAM_STR);
@@ -16,7 +16,7 @@ $prep->bindValue(':password', $password , PDO::PARAM_STR);
 $prep->bindValue(':nom', $nom, PDO::PARAM_STR);
 $prep->bindValue(':prenom', $prenom, PDO::PARAM_STR);
 $prep->bindValue(':url_image', $url_image, PDO::PARAM_STR);
-$prep->bindValue(':url_site', $url_image, PDO::PARAM_STR);
+$prep->bindValue(':url_site', $url_site, PDO::PARAM_STR);
 $prep->execute();
 
 $_SESSION["mail"] = $mail; 

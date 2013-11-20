@@ -37,7 +37,7 @@ if ($check_query->rowCount()==1) {
 	$check_query->closeCursor();
 	$check_query = NULL;
 
-	header ("Location: ../donations.php");
+	header ("Location: ../profil.php");
 	exit();
 
 }else{
