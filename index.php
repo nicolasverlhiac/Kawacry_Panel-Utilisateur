@@ -53,7 +53,7 @@ require "inc/config.php";
 				<hr>
 			</form>
 
-			<form action="inc/signin.php" method="POST">
+			<form action="inc/actions_db/signin.php" method="POST">
 
 				<input id="mail" placeholder="Adresse e-mail" type="text" name="mail">
 				<input id="password" placeholder="Mot de passe" type="password" name="password">

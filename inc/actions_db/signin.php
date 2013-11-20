@@ -39,7 +39,7 @@ $_SESSION["token"] = hashpassword($_SESSION["token_uncrypted"]);
 $prep->closeCursor();
 $prep = NULL;
 	
-header ("location: ../profil.php");
+header ("location: ../../profil.php");
 
 
 ?>

@@ -45,7 +45,7 @@ $f = basename($_SERVER['PHP_SELF']);
 
 				<div class="profil">
 
-					<a data-toggle="modal" href="#image-profil" class="nv php" title="PHP - Langage de programmation web, coté serveur">
+					<a data-toggle="modal" href="#image-profil" class="nv php" title="Changer l'image de profil">
 					<img src="<?php echo $_SESSION["url_image"]; ?>" width="150" height="150">
 					</a>
 
@@ -75,11 +75,11 @@ $f = basename($_SERVER['PHP_SELF']);
 
 		            <div class="clear"></div>
 		            
-		            <input type="submit" value="Sauvergarder">
+		            <input type="submit" value="Sauvegarder">
 
 		            <div class="clear"></div>
 		            <hr>
-		            <p>Vous ne vous servez plus de votre compte? Vous pouvez le <a href="inc/delete.php?mail=<?php echo $_SESSION['mail']; ?>&mdp=<?php echo $_SESSION['motdepasse']; ?>">supprimer</a>.</p>
+		            <p>Vous ne vous servez plus de votre compte? Vous pouvez le <a data-toggle="modal" href="#supprimer-compte" class="nv php" title="Supprimer le compte">supprimer</a>.</p>
 
 
 		        </form>
@@ -94,7 +94,7 @@ $f = basename($_SERVER['PHP_SELF']);
 
     <footer>
 
-    	<!-- PHOTOSHOP -->
+    	<!-- IMAGE PROFIL -->
 
 		<div id="image-profil" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
 		    <div class="modal-header">
@@ -114,6 +114,23 @@ $f = basename($_SERVER['PHP_SELF']);
 		   <!--  <div class="modal-footer">
 		        <button class="botn" data-dismiss="modal" aria-hidden="true">Ok</button>
 		    </div> -->
+		</div>
+
+		<!-- SUPPRIMER LE COMPTE -->
+
+		<div id="supprimer-compte" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+		    <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		        <h3>Supprimer le compte</h3>
+		    </div>
+		    
+		    <div class="modal-body">	
+		    	<p>Êtes vous sur de vouloir supprimer votre compte, ainsi que toute vos données? Cette action sera irrrémédiable.</p>
+		    </div>
+
+		    <div class="modal-footer">
+		        <a class="botn" aria-hidden="true" href="inc/actions_db/delete.php?mail=<?php echo $_SESSION['mail']; ?>&mdp=<?php echo $_SESSION['motdepasse']; ?>">Oui, supprimer</a>
+		    </div>
 		</div>
 
 

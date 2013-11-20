@@ -13,6 +13,6 @@ $prep_query->bindValue(':password', $password, PDO::PARAM_STR);
 
 $prep_query->execute();
 
-header ("Location: logout.php");
+header ("Location: ../logout.php");
 
 ?>
