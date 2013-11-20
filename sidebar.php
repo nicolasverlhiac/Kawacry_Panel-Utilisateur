@@ -1,5 +1,5 @@
 			<div class="header-sidebar">
-				<img src="images/profil.png" width="80" height="80">
+				<img src="<?php echo $_SESSION["url_image"]; ?>" width="80" height="80">
 				<h2>Nicolas Verlhiac</h2>
 			</div>
 
@@ -20,6 +20,6 @@
 					</a>
 				</li>
 				<li>
-					<a href="logout.php">Déconnexion <i class="icon-logout"></i></a>
+					<a href="inc/logout.php">Déconnexion <i class="icon-logout"></i></a>
 				</li>
 			</ul>

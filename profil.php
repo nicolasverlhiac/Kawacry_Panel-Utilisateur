@@ -43,7 +43,7 @@ $f = basename($_SERVER['PHP_SELF']);
 
 				<div class="profil">
 
-					<img src="images/profil.png" width="200" height="200">
+					<img src="<?php echo $_SESSION["url_image"]; ?>" width="200" height="200">
 
 				</div>
 
@@ -65,10 +65,10 @@ $f = basename($_SERVER['PHP_SELF']);
 				<form action="sound.php" method="POST">
 		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
 
-		            <input id="mail" placeholder="Nicolas" type="text" name="mail">
-		            <input id="mail" placeholder="Verlhiac" type="text" name="mail">
+		            <input id="mail" placeholder="<?php echo $_SESSION["prenom"]; ?>" type="text" name="mail">
+		            <input id="mail" placeholder="<?php echo $_SESSION["nom"]; ?>" type="text" name="mail">
 		            <div class="clear"></div>
-		            <input id="mail" placeholder="nicolasverlhiac.fr" type="text" name="mail">	
+		            <input id="mail" placeholder="<?php echo $_SESSION["url_site"]; ?>" type="text" name="mail">	
 
 		            <div class="clear"></div>
 		            
