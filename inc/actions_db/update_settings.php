@@ -37,8 +37,6 @@ if (strlen($_POST["mail"]) >0) {
 	/* Fermeture propre de la requête et destruction du contenu de la variable $prep_query */
 	$prep_query->closeCursor();
 	$prep_query = NULL;
-
-	header ("Location: ../settings.php");
 }
 
 /* PASSWORD
@@ -65,8 +63,9 @@ if (strlen($_POST["password"]) >0) {
 
 	$prep_query->closeCursor();
 	$prep_query = NULL;
-
-	header ("Location: ../settings.php");
 }
+
+/* On redirige vers la page Settings.php */
+header ("Location: ../../settings.php");
 
 ?>

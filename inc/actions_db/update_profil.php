@@ -88,6 +88,7 @@ if (strlen($_POST["url_site"]) >0) {
 	$prep_query = NULL;
 }
 
-header ("Location: ../profil.php");
+/* On redirige vers la page Profil.php */
+header ("Location: ../../profil.php");
 
 ?>

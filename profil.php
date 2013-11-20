@@ -45,7 +45,9 @@ $f = basename($_SERVER['PHP_SELF']);
 
 				<div class="profil">
 
+					<a data-toggle="modal" href="#image-profil" class="nv php" title="PHP - Langage de programmation web, coté serveur">
 					<img src="<?php echo $_SESSION["url_image"]; ?>" width="150" height="150">
+					</a>
 
 				</div>
 
@@ -63,7 +65,7 @@ $f = basename($_SERVER['PHP_SELF']);
 					<h2>Modifier votre profil</h2>
 				</div>
 
-				<form action="inc/update.php" method="POST">
+				<form action="inc/actions_db/update_profil.php" method="POST">
 		    		<p>Dans vos paramétres, vous pouvez modifier les informations de votre compte (identifiant et mot de passe).</p>
 
 		            <input id="prenom" placeholder="<?php echo $_SESSION["prenom"]; ?>" type="text" name="prenom">
@@ -92,7 +94,31 @@ $f = basename($_SERVER['PHP_SELF']);
 
     <footer>
 
-    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    	<!-- PHOTOSHOP -->
+
+		<div id="image-profil" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+		    <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		        <h3>Modifier l'image de profil</h3>
+		    </div>
+		    
+		    <div class="modal-body">
+		        <form action="inc/actions_db/update_image.php" method="POST">
+		        	<p>Insérez le lien de votre image pour la changer. Vous pouvez upoader des image sur ce <a href="http://transfile.fr" target="_blank">service</a>.</p>
+		            <input id="url_image" placeholder="<?php echo $_SESSION["url_image"]; ?>" type="text" name="url_image">
+		            <input type="submit" value="Sauvegarder">
+
+		        </form>
+		    </div>
+
+		   <!--  <div class="modal-footer">
+		        <button class="botn" data-dismiss="modal" aria-hidden="true">Ok</button>
+		    </div> -->
+		</div>
+
+
+    	<script src="js/jquery.js"></script>
+    	<script src="js/modal.js"></script>
 
 
     	<script type="text/javascript">

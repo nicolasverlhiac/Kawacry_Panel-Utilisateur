@@ -1,5 +1,7 @@
 <?php
-// ** Initialisation des paramètres de connexion à la base de données MySQL ** //
+/* 
+ * Initialisation des paramètres de connexion à la base de données MySQL 
+ */
 /** Nom de la base de données MySQL. */
 define("SQL_DBASE","kawacry");
 
@@ -12,7 +14,9 @@ define("SQL_PASS","root");
 /** Adresse de l'hébergement MySQL. */
 define("SQL_HOST","localhost");
 
-// ** Connexion à la base de données avec PDO ** //
+/* 
+ * Connexion à la base de données avec PDO 
+ */
 try {
     $mysql = new PDO("mysql:dbname=".SQL_DBASE.";host=".SQL_HOST,SQL_USER,SQL_PASS);
     $mysql->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );

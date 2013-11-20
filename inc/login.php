@@ -2,11 +2,11 @@
 include ("config.php");
 
 if (!$_SERVER["REQUEST_METHOD"]=="POST") {
-	die("Acces non autorisé");
+	die(include ("errors/access.php"));
 }
 
 if(strlen($_POST["mail"]) <=0 or strlen($_POST["password"]) <=0 ){
-	die("Vous devez entrer un mail d'utilisateur et un mot de passe");
+	die(include ("errors/erreurs.php"));
 }
 
 // ** Récupération des variables du formulaire de connexion ** //
@@ -55,6 +55,6 @@ if ($check_query->rowCount()==1) {
 
 
 }else{
-	die("Mauvais couple d'identifiants");
+	die(include ("errors/id_faux.php"));
 }
 ?>

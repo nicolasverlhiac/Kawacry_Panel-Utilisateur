@@ -1,6 +1,14 @@
 <?php
 include ("../config.php");
 
+if (!$_SERVER["REQUEST_METHOD"]=="POST") {
+	die(include ("../errors/access.php"));
+}
+
+if(strlen($_POST["mail"]) <=0 or strlen($_POST["password"]) <=0 or strlen($_POST["nom"]) <=0 or strlen($_POST["prenom"]) <=0 ){
+	die(include ("../errors/erreurs.php"));
+}
+
 $mail = ($_POST['mail']);
 $password = hashPassword($_POST['password']);
 $nom = ($_POST['nom']);
