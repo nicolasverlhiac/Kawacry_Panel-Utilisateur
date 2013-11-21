@@ -1,5 +1,7 @@
 <?php
+
 include ("../config.php");
+include ("../functions.php");
 
 if (!$_SERVER["REQUEST_METHOD"]=="POST") {
 	die(include ("../errors/access.php"));
@@ -9,12 +11,14 @@ if(strlen($_POST["mail"]) <=0 or strlen($_POST["password"]) <=0 or strlen($_POST
 	die(include ("../errors/erreurs.php"));
 }
 
+if(empty($_POST['mail']) || !validateMail($_POST['mail'])) die(include ('../errors/erreurs.php'));
+
 $mail = ($_POST['mail']);
 $password = hashPassword($_POST['password']);
 $nom = ($_POST['nom']);
 $prenom = ($_POST['prenom']);
 $url_image = "images/profil.png";
-$url_site = "";
+$url_site = "http://";
 
 $query = "INSERT INTO utilisateurs (email, password, nom, prenom, url_image, url_site) VALUES (:mail, :password, :nom, :prenom, :url_image, :url_site );";
 $prep = $mysql->prepare($query);

@@ -2,6 +2,12 @@
 
 /* Helper functions */
 
+function validateMail($adresse)  
+{  
+   $Syntaxe='#^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,6}$#';  
+   return preg_match($Syntaxe,$adresse);
+}
+
 function validateURL($str)
 {
 	return preg_match('/(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:\/~\+#]*[\w\-\@?^=%&amp;\/~\+#])?/i',$str);

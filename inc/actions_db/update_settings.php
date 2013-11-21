@@ -1,6 +1,7 @@
 <?php 
 
 include ("../config.php");
+include ("../functions.php");
 
 /* Mise à jour des informations du compte depuis la page settings.php 
  */
@@ -15,6 +16,8 @@ include ("../config.php");
  */
 
 if (strlen($_POST["mail"]) >0) {
+
+	if(empty($_POST['mail']) || !validateMail($_POST['mail'])) die(include ('../errors/erreurs.php'));
 
 	/* Récuprération des variables */
 	$mail = $_SESSION["mail"];

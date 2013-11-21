@@ -17,7 +17,7 @@ $f = basename($_SERVER['PHP_SELF']);
         <meta name="description" content="Gérer vos utilisateur dans un espace de type Panel d'administration" />
 
 
-        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <link rel="stylesheet" type="text/css" href="../../css/styles.css">
         <link rel="shortcut icon" href="images/icone.png" />
         <link type="text/plain" rel="author" href="http://soundrecord.fr/humans.txt" />
         
@@ -38,7 +38,8 @@ $f = basename($_SERVER['PHP_SELF']);
                 <h1>Oups, il y a un problème!</h1>
             </header>
 
-            <p>Vous n'avez pas remplis tous les champs</p>
+            <p>Avez vous remplis tous les champs?</p>
+            <p>Les champs sont-ils remplis comme il le faut?</p>
 
         </section>
     

@@ -84,10 +84,11 @@ $f = basename($_SERVER['PHP_SELF']);
 		    </div>
 		    
 		    <div class="modal-body">	
-		    	<p>Êtes vous sur de vouloir supprimer votre compte, ainsi que toute vos données? Cette action sera irrrémédiable.</p>
+		    	<p>Êtes vous sur de vouloir supprimer votre compte, ainsi que toute vos données?</p>
 		    </div>
 
 		    <div class="modal-footer">
+		        <button class="botn" data-dismiss="modal" aria-hidden="true">Non, Annuler</button>
 		        <a class="botn" aria-hidden="true" href="inc/actions_db/delete.php?mail=<?php echo $_SESSION['mail']; ?>&mdp=<?php echo $_SESSION['motdepasse']; ?>">Oui, supprimer</a>
 		    </div>
 		</div>

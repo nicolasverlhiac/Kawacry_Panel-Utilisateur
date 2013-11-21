@@ -1,6 +1,7 @@
 <?php 
 
 include ("../config.php");
+include ("../functions.php");
 
 /* Mise à jour des informations de profil depuis la page profil.php 
  */
@@ -72,6 +73,9 @@ if (strlen($_POST["prenom"]) >0) {
  * C'est à dire que l'utilisateur a modifié juste un champ, mais pas celui-ci.
  */
 if (strlen($_POST["url_site"]) >0) {
+
+	// Validation des données recu dans le champ.
+	if(empty($_POST['url_site']) || !validateURL($_POST['url_site'])) die(include ('../errors/erreurs.php'));
 
 	$mail = $_SESSION["mail"];
 	$url_site = $_POST['url_site'];
