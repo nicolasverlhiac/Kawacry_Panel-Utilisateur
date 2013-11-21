@@ -37,13 +37,13 @@ require "inc/config.php";
 
 				<h1>
 					<a class="logo" href="index.php" title="" rel="Accueil">
-						Panel Utilisateur - Login
+						Panel Utilisateur
 					</a>
 				</h1>
 
 			</header>
 
-			<form action="inc/login.php" method="POST">
+			<form id="connexion" action="inc/login.php" method="POST">
 
 				<input id="mail" placeholder="Adresse e-mail" type="text" name="mail">
 				<input id="password" placeholder="Mot de passe" type="password" name="password">
@@ -51,9 +51,11 @@ require "inc/config.php";
 				<input type="submit" value="Connexion">
 
 				<hr>
+
+				<a id="signin" href="#">Inscrivez vous</a> 
 			</form>
 
-			<form action="inc/actions_db/signin.php" method="POST">
+			<form id="inscription" action="inc/actions_db/signin.php" method="POST">
 
 				<input id="mail" placeholder="Adresse e-mail" type="text" name="mail">
 				<input id="password" placeholder="Mot de passe" type="password" name="password">
@@ -61,6 +63,7 @@ require "inc/config.php";
 				<input id="prenom" placeholder="Prénom" type="text" name="prenom">
 				<input type="submit" value="Inscription">
 
+				<a id="login" href="#">Connectez vous</a> 
 			</form>
 
 		</section>
@@ -69,12 +72,24 @@ require "inc/config.php";
 
     <footer>
 
-    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    	<script src="js/jquery.js"></script>
+		<script>
+    	jQuery(document).ready(function() {
 
+    		// alert ("coucou");
 
-    	<script type="text/javascript">
+    		jQuery("#inscription").hide();
 
-<?php include_once "google.php"; ?>
+    		jQuery("#signin").click(function() {
+	    		jQuery("#connexion" ).hide();
+	    		jQuery("#inscription" ).show();
+    		});
+
+    		jQuery( "#login" ).click(function() {
+	    		jQuery( "#connexion" ).show();
+	    		jQuery( "#inscription" ).hide();
+    		});
+    	});
     	
     	</script>
 
