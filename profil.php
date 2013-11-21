@@ -59,8 +59,6 @@ $f = basename($_SERVER['PHP_SELF']);
 
 				<div class="clear"></div>
 
-				<hr>
-
 				<div class="header-content">
 					<h2>Modifier votre profil</h2>
 				</div>

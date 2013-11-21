@@ -91,8 +91,10 @@ header {
 }
 
 header#head-accueil {
-    width: 400px;
-    margin: 100px 0 0 0;
+    width: 435px;
+    margin: -25px 0 25px -25px;
+    padding: 20px 0 15px 25px;
+    background: #2D3033;
 }
 
 body {
@@ -118,8 +120,12 @@ section {
 }
 
 section#accueil {
-    width: 400px;
-    margin: 0 auto;
+    width: 410px;
+    margin: 150px auto 0;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 section.erreur {
@@ -146,9 +152,7 @@ footer {
 
 
 h1 {
-    border-bottom: 1px solid #b4b4b4;
-    padding-bottom: 15px;
-    margin: 0 0px 30px 0;
+    margin: 0;
 }
 
 h2 {
@@ -182,12 +186,13 @@ a:hover { color: #63c5e7; }
 a.logo {
     font-size: 35px;
     font-weight: bold;
-    color: #666666;
-    background: url('../images/logo-bis3.png') no-repeat left top;
-    height: 80px;
+    color: #fff;
+    height: 40px;
     width: 400px;
     padding-top: 10px;
     display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /*Boutton*/
@@ -334,11 +339,11 @@ ul.sidebar li a i.current{
 div.header-content {
     border-bottom: 1px solid #e4e4e4;
     margin-bottom: 15px; 
-    padding: 10px 0;
+    padding: 14px 0;
 }
 
 div.header-content h2 {
-    font-size: 20px;
+    font-size: 24px;
     color: #999999;
     margin: 0; 
     font-weight: 100;
@@ -645,7 +650,6 @@ button.close {
 
 form {
     width: 400px;
-    float: left;
 }
 
 label{
