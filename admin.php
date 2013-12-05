@@ -1,5 +1,6 @@
 <?php 
-require "inc/config.php";
+require ("inc/config.php");
+require ("inc/token.php");
 
 $f = basename($_SERVER['PHP_SELF']);
 ?>

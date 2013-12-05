@@ -46,7 +46,7 @@ $f = basename($_SERVER['PHP_SELF']);
 				<div class="profil">
 
 					<a data-toggle="modal" href="#image-profil" class="nv php" title="Changer l'image de profil">
-					<img src="<?php echo $_SESSION["url_image"]; ?>" width="150" height="150">
+						<img src="<?php echo $_SESSION["url_image"]; ?>" width="150" height="150">
 					</a>
 
 				</div>
